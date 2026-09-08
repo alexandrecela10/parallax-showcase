@@ -1,0 +1,119 @@
+{
+ "accuracy": [
+  {
+   "field": "principal",
+   "correct": 48,
+   "n": 48,
+   "accuracy": 1.0,
+   "wilson95_lo": 0.9259,
+   "wilson95_hi": 1.0,
+   "bar": 0.9,
+   "pass": true
+  },
+  {
+   "field": "cost",
+   "correct": 48,
+   "n": 48,
+   "accuracy": 1.0,
+   "wilson95_lo": 0.9259,
+   "wilson95_hi": 1.0,
+   "bar": 0.9,
+   "pass": true
+  },
+  {
+   "field": "fair_value",
+   "correct": 48,
+   "n": 48,
+   "accuracy": 1.0,
+   "wilson95_lo": 0.9259,
+   "wilson95_hi": 1.0,
+   "bar": 0.9,
+   "pass": true
+  }
+ ],
+ "consistency": {
+  "pairs": 3333,
+  "agree_all": 3333,
+  "per_filer": {
+   "ARCC": {
+    "pairs": 1063,
+    "agree_all": 1063,
+    "rate": 1.0,
+    "first_10k": "0001287750-25-000007",
+    "second_10k": "0001287750-26-000006",
+    "rows_cur": 1302,
+    "rows_prior": 1302
+   },
+   "FSK": {
+    "pairs": 248,
+    "agree_all": 248,
+    "rate": 1.0,
+    "first_10k": "0001628280-25-008175",
+    "second_10k": "0001628280-26-011734",
+    "rows_cur": 534,
+    "rows_prior": 534
+   },
+   "GBDC": {
+    "pairs": 590,
+    "agree_all": 590,
+    "rate": 1.0,
+    "first_10k": "0001476765-24-000132",
+    "second_10k": "0001476765-25-000096",
+    "rows_cur": 1570,
+    "rows_prior": 1570
+   },
+   "HTGC": {
+    "pairs": 281,
+    "agree_all": 281,
+    "rate": 1.0,
+    "first_10k": "0001280784-25-000007",
+    "second_10k": "0001280784-26-000009",
+    "rows_cur": 310,
+    "rows_prior": 315
+   },
+   "MAIN": {
+    "pairs": 427,
+    "agree_all": 427,
+    "rate": 1.0,
+    "first_10k": "0001396440-25-000018",
+    "second_10k": "0001396440-26-000016",
+    "rows_cur": 570,
+    "rows_prior": 570
+   },
+   "OBDC": {
+    "pairs": 338,
+    "agree_all": 338,
+    "rate": 1.0,
+    "first_10k": "0001655888-25-000007",
+    "second_10k": "0001655888-26-000010",
+    "rows_cur": 340,
+    "rows_prior": 342
+   },
+   "PSEC": {
+    "pairs": 192,
+    "agree_all": 192,
+    "rate": 1.0,
+    "first_10k": "0001287032-25-000232",
+    "second_10k": "0001287032-26-000269",
+    "rows_cur": 201,
+    "rows_prior": 201
+   },
+   "TSLX": {
+    "pairs": 194,
+    "agree_all": 194,
+    "rate": 1.0,
+    "first_10k": "0000950170-25-019845",
+    "second_10k": "0001193125-26-048664",
+    "rows_cur": 194,
+    "rows_prior": 194
+   }
+  },
+  "rate": 1.0,
+  "wilson95": [
+   0.9988,
+   1.0
+  ]
+ },
+ "seed": 20260909,
+ "sample_sha256": "d619382fca2df8ef842e949cab2f95f5bd2d5d4a94263b750e384f382cd6ed0b"
+}

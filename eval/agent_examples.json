@@ -1,0 +1,90 @@
+{
+  "status": "archived experiment evidence; canned examples; no live model call",
+  "source_summary": {
+    "n": 20,
+    "repeats_completed": 3,
+    "accuracy": 0.7,
+    "accuracy_n_pass": 14,
+    "citation_groundedness": 0.8937,
+    "n_questions_with_claims": 16,
+    "claims_total": 70,
+    "claims_verified": 65,
+    "verifier_strikes": 5,
+    "disagreement_count": 7
+  },
+  "examples": [
+    {
+      "question_id": "C2",
+      "question": "We're pricing a first-lien loan to a Software company. Where is that market?",
+      "tool": "get_comparables",
+      "saved_answer": "Only 5 first-lien positions match the exact label 'Software' across 2 filers, clearing at a median spread of 675 bps (p25 550 bps, p75 700 bps), which is a thin book and not a broad market. The neighbouring label 'Software and Services' has 193 first-lien positions clearing at a median of 475 bps, and 'Software & Services' has 132 positions at a median of 480 bps in the latest reported filings.",
+      "citations": [
+        "0001287032-26-000269",
+        "0001476765-26-000048",
+        "0001628280-26-050307",
+        "0001628280-26-053783"
+      ],
+      "verifier_pass": true,
+      "verifier_strikes": 0,
+      "verifier_reason": "All recorded claims verified.",
+      "learning": "Exact-label comparables and neighbour disclosure."
+    },
+    {
+      "question_id": "B1",
+      "question": "How is Pluralsight marked across the BDCs that hold it, and how far apart are those marks?",
+      "tool": "get_borrower",
+      "saved_answer": "I found rows for the name you asked about, but I couldn't tie the number I was about to quote (0.1136 ratio) back to a filing line, so I'm not quoting it. The rows I did find are below with their accessions. Read them and hold me to them.",
+      "citations": [
+        "0001476765-26-000048",
+        "0001628280-26-050307",
+        "0001655888-26-000056"
+      ],
+      "verifier_pass": false,
+      "verifier_strikes": 1,
+      "verifier_reason": "could not tie a number to a filing line: value 0.1136 matches `dispersion_latest`, an aggregate over rows in 3 accession(s); the claim cites 2 of them and an aggregate has to cite 3",
+      "learning": "The verifier rejected an under-cited aggregate and replaced the answer with a refusal."
+    },
+    {
+      "question_id": "E1",
+      "question": "When ARCC lends, which other BDC is most often in the deal, and on how many borrowers?",
+      "tool": "sponsor_or_colender_exposure",
+      "saved_answer": "Across the eight BDCs in this tape, Golub Capital BDC (GBDC) co-lends most often with ARCC, sharing 103 borrowers across 645 borrower-periods. Blue Owl Capital Corp (OBDC) is second with 68 shared borrowers.",
+      "citations": [
+        "0001287750-24-000054",
+        "0001287750-25-000007",
+        "0001287750-25-000020",
+        "0001287750-25-000038",
+        "0001476765-24-000132",
+        "0001476765-25-000016",
+        "0001628280-26-027688",
+        "0001628280-26-050307",
+        "0001655888-24-000023",
+        "0001655888-25-000007"
+      ],
+      "verifier_pass": true,
+      "verifier_strikes": 0,
+      "verifier_reason": "All recorded claims verified.",
+      "learning": "Archived graph traversal result; the public app does not query Neo4j."
+    },
+    {
+      "question_id": "R2",
+      "question": "Run the review list for 2026-03-31 at k=50. Which filings are behind those names?",
+      "tool": "review_list",
+      "saved_answer": "For 2026-03-31 at k=50, 17 of the 50 names are new since the prior period, ranked by baseline lowest mark across 8 filers' Q1 2026 schedules of investments. This is a ranking of what marks reveal, not a complete screen of every name at risk. The eight underlying filing accessions behind these positions are cited in the claims.",
+      "citations": [
+        "0001193125-26-206313",
+        "0001280784-26-000027",
+        "0001287032-26-000164",
+        "0001396440-26-000073",
+        "0001476765-26-000033",
+        "0001628280-26-027688",
+        "0001628280-26-033118",
+        "0001655888-26-000033"
+      ],
+      "verifier_pass": true,
+      "verifier_strikes": 0,
+      "verifier_reason": "All recorded claims verified.",
+      "learning": "A capacity-sized observed-mark list with filing accessions, not model scores."
+    }
+  ]
+}

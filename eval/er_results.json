@@ -1,0 +1,1507 @@
+{
+ "criterion": "M3.2 / M3.3 (criteria v3), plus cycle 4 P0.b and P0.c",
+ "selection": "in-sample",
+ "selection_note": "one parameter chosen on the pairs it is reported on",
+ "threshold_rule": "sweep t = 60..100 step 1 over the 150 in-curve labelled pairs; chosen = the lowest t with precision(t) >= 0.95 and n_pred_pos(t) >= 40; if none qualifies, label 30 more stratum C pairs (seed 20260910, next draw) and re-run; if still none, report the best and fail M3.2",
+ "threshold_qualifies": true,
+ "chosen_threshold": 93,
+ "precision": 0.9855,
+ "n_pred_pos": 69,
+ "tp": 68,
+ "fp": 1,
+ "ci95": [
+  0.9224,
+  0.9974
+ ],
+ "ci_method": "Wilson 95%",
+ "recall": 0.9315,
+ "n_label_1_in_curve": 73,
+ "n_in_curve": 150,
+ "recall_note": "recall over the 150 in-curve labelled pairs (sampled strata), not over the population of true pairs",
+ "precision_hard": 1.0,
+ "n_hard_pred_pos": 44,
+ "hard_strata": [
+  "C",
+  "E"
+ ],
+ "precision_hard_ci95": [
+  0.9197,
+  1.0
+ ],
+ "precision_transitive": 0.85,
+ "n_transitive": 20,
+ "transitive": {
+  "n_transitive": 20,
+  "correct": 17,
+  "precision_transitive": 0.85,
+  "ci95": [
+   0.6396,
+   0.9476
+  ],
+  "direct_score_min": -1.0,
+  "never_scored": 17
+ },
+ "per_stratum_at_threshold": {
+  "A": {
+   "n": 25,
+   "label_1": 24,
+   "n_pred_pos": 25,
+   "tp": 24,
+   "precision": 0.96
+  },
+  "B": {
+   "n": 20,
+   "label_1": 1,
+   "n_pred_pos": 0,
+   "tp": 0,
+   "precision": null
+  },
+  "C": {
+   "n": 65,
+   "label_1": 8,
+   "n_pred_pos": 4,
+   "tp": 4,
+   "precision": 1.0
+  },
+  "E": {
+   "n": 40,
+   "label_1": 40,
+   "n_pred_pos": 40,
+   "tp": 40,
+   "precision": 1.0
+  }
+ },
+ "curve": [
+  {
+   "threshold": 60,
+   "n_pred_pos": 133,
+   "tp": 73,
+   "fp": 60,
+   "precision": 0.5489,
+   "recall": 1.0
+  },
+  {
+   "threshold": 61,
+   "n_pred_pos": 133,
+   "tp": 73,
+   "fp": 60,
+   "precision": 0.5489,
+   "recall": 1.0
+  },
+  {
+   "threshold": 62,
+   "n_pred_pos": 133,
+   "tp": 73,
+   "fp": 60,
+   "precision": 0.5489,
+   "recall": 1.0
+  },
+  {
+   "threshold": 63,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 64,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 65,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 66,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 67,
+   "n_pred_pos": 131,
+   "tp": 73,
+   "fp": 58,
+   "precision": 0.5573,
+   "recall": 1.0
+  },
+  {
+   "threshold": 68,
+   "n_pred_pos": 131,
+   "tp": 73,
+   "fp": 58,
+   "precision": 0.5573,
+   "recall": 1.0
+  },
+  {
+   "threshold": 69,
+   "n_pred_pos": 130,
+   "tp": 72,
+   "fp": 58,
+   "precision": 0.5538,
+   "recall": 0.9863
+  },
+  {
+   "threshold": 70,
+   "n_pred_pos": 130,
+   "tp": 72,
+   "fp": 58,
+   "precision": 0.5538,
+   "recall": 0.9863
+  },
+  {
+   "threshold": 71,
+   "n_pred_pos": 125,
+   "tp": 72,
+   "fp": 53,
+   "precision": 0.576,
+   "recall": 0.9863
+  },
+  {
+   "threshold": 72,
+   "n_pred_pos": 123,
+   "tp": 71,
+   "fp": 52,
+   "precision": 0.5772,
+   "recall": 0.9726
+  },
+  {
+   "threshold": 73,
+   "n_pred_pos": 118,
+   "tp": 71,
+   "fp": 47,
+   "precision": 0.6017,
+   "recall": 0.9726
+  },
+  {
+   "threshold": 74,
+   "n_pred_pos": 116,
+   "tp": 70,
+   "fp": 46,
+   "precision": 0.6034,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 75,
+   "n_pred_pos": 115,
+   "tp": 70,
+   "fp": 45,
+   "precision": 0.6087,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 76,
+   "n_pred_pos": 112,
+   "tp": 70,
+   "fp": 42,
+   "precision": 0.625,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 77,
+   "n_pred_pos": 104,
+   "tp": 70,
+   "fp": 34,
+   "precision": 0.6731,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 78,
+   "n_pred_pos": 101,
+   "tp": 70,
+   "fp": 31,
+   "precision": 0.6931,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 79,
+   "n_pred_pos": 96,
+   "tp": 69,
+   "fp": 27,
+   "precision": 0.7188,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 80,
+   "n_pred_pos": 96,
+   "tp": 69,
+   "fp": 27,
+   "precision": 0.7188,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 81,
+   "n_pred_pos": 94,
+   "tp": 69,
+   "fp": 25,
+   "precision": 0.734,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 82,
+   "n_pred_pos": 91,
+   "tp": 69,
+   "fp": 22,
+   "precision": 0.7582,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 83,
+   "n_pred_pos": 88,
+   "tp": 69,
+   "fp": 19,
+   "precision": 0.7841,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 84,
+   "n_pred_pos": 87,
+   "tp": 69,
+   "fp": 18,
+   "precision": 0.7931,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 85,
+   "n_pred_pos": 83,
+   "tp": 69,
+   "fp": 14,
+   "precision": 0.8313,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 86,
+   "n_pred_pos": 79,
+   "tp": 69,
+   "fp": 10,
+   "precision": 0.8734,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 87,
+   "n_pred_pos": 77,
+   "tp": 68,
+   "fp": 9,
+   "precision": 0.8831,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 88,
+   "n_pred_pos": 77,
+   "tp": 68,
+   "fp": 9,
+   "precision": 0.8831,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 89,
+   "n_pred_pos": 74,
+   "tp": 68,
+   "fp": 6,
+   "precision": 0.9189,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 90,
+   "n_pred_pos": 73,
+   "tp": 68,
+   "fp": 5,
+   "precision": 0.9315,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 91,
+   "n_pred_pos": 73,
+   "tp": 68,
+   "fp": 5,
+   "precision": 0.9315,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 92,
+   "n_pred_pos": 73,
+   "tp": 68,
+   "fp": 5,
+   "precision": 0.9315,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 93,
+   "n_pred_pos": 69,
+   "tp": 68,
+   "fp": 1,
+   "precision": 0.9855,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 94,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 95,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 96,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 97,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 98,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 99,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 100,
+   "n_pred_pos": 65,
+   "tp": 64,
+   "fp": 1,
+   "precision": 0.9846,
+   "recall": 0.8767
+  }
+ ],
+ "false_positives_at_threshold": [
+  {
+   "pair_id": "496fa5a07b22",
+   "stratum": "A",
+   "filer_a": "OBDC",
+   "name_a": "Bayshore Intermediate #2, L.P. (dba Boomi)",
+   "filer_b": "OBDC",
+   "name_b": "Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+   "score": 100.0,
+   "rationale": "co-invest vehicle (Brooklyn Lender Co-Invest 2) vs the borrower Boomi: fund and its portfolio company"
+  }
+ ],
+ "false_negatives_at_threshold": [
+  {
+   "pair_id": "360f00354733",
+   "stratum": "B",
+   "filer_a": "FSK",
+   "name_a": "Quorum Health Corp, Trade Claim",
+   "filer_b": "FSK",
+   "name_b": "Quorum Health Corp, Trust Initial Funding Units",
+   "score": 68.42105263157895,
+   "rationale": "same entity, two security tails"
+  },
+  {
+   "pair_id": "88a8f5d4cdb3",
+   "stratum": "C",
+   "filer_a": "FSK",
+   "name_a": "Integrity Marketing Group LLC",
+   "filer_b": "OBDC",
+   "name_b": "Integrity Marketing Acquisition, LLC",
+   "score": 86.36363636363636,
+   "rationale": "Integrity Marketing Acquisition is the borrower vehicle of Integrity Marketing Group; insurance, same S+500"
+  },
+  {
+   "pair_id": "e9a6bf00b54c",
+   "stratum": "C",
+   "filer_a": "FSK",
+   "name_a": "Fullsteam Holdings LLC",
+   "filer_b": "TSLX",
+   "name_b": "Fullsteam Operations, LLC",
+   "score": 73.6842105263158,
+   "rationale": "Fullsteam Holdings vs Fullsteam Operations: holdco/opco of one group (payments software)"
+  },
+  {
+   "pair_id": "94cd6ef3abb9",
+   "stratum": "C",
+   "filer_a": "OBDC",
+   "name_a": "MessageBird BidCo B.V.",
+   "filer_b": "OBDC",
+   "name_b": "MessageBird Holding B.V.",
+   "score": 78.57142857142857,
+   "rationale": "MessageBird BidCo vs MessageBird Holding: bidco/holding of one group"
+  },
+  {
+   "pair_id": "254a69999911",
+   "stratum": "C",
+   "filer_a": "FSK",
+   "name_a": "Quorum Health Corp, Private Equity",
+   "filer_b": "FSK",
+   "name_b": "Quorum Health Corp, Trade Claim",
+   "score": 71.69811320754717,
+   "rationale": "same entity, two security tails"
+  }
+ ],
+ "precision_note": "`precision`, `recall` and `curve` are the label-time numbers on the raw score, the ones M3.2 was scored on. The vehicle guard (P0.c) was added after labelling; its effect is in post_label_rules and in curve_guarded, and the borrower counts below come from the guarded run.",
+ "precision_subset_token": {
+  "value": 0.9333,
+  "tp": 28,
+  "n": 30,
+  "ci95": [
+   0.7868,
+   0.9815
+  ],
+  "ci_method": "Wilson 95%",
+  "seed": 20260912,
+  "stratum": "F",
+  "in_curve": false
+ },
+ "precision_subset_token_all": {
+  "value": 0.9535,
+  "tp": 41,
+  "n": 43,
+  "ci95": [
+   0.8454,
+   0.9872
+  ],
+  "ci_method": "Wilson 95%",
+  "strata": [
+   "F",
+   "E subset-token"
+  ]
+ },
+ "precision_subset_token_note": "stratum F is 30 cross-filer pairs at score 100 with norm_a != norm_b, drawn at seed 20260912 on distinct normalised pairs not already labelled, labelled blind, out of curve like D; precision_subset_token_all adds the 13 stratum-E pairs that are also subset-token",
+ "post_label_rules": [
+  {
+   "rule": "a name whose primary or any alias carries a vehicle token (co-invest, co-investment, coinvest, feeder, aggregator, fund, slf) does not join a component through a dba or fka alias edge alone; its primary name still scores and merges normally",
+   "rule_id": "P0.c (FM-032, D-009 ruling 3)",
+   "added_after_labelling": true,
+   "designed_from": "one false positive at t = 93 (pair 496fa5a07b22, the Boomi pair); this is a post-hoc rule, not an independent test of it. Alex's 20 labels (seed 20260911) stay the independent check.",
+   "precision_at_93_before": 0.9855,
+   "n_pred_pos_before": 69,
+   "precision_at_93_after": 1.0,
+   "n_pred_pos_after": 68,
+   "n_merges_changed": 6,
+   "n_merges_changed_definition": "candidate pairs at score >= t whose guarded merge score is < t",
+   "n_names_split_out": 4,
+   "names_split_out": [
+    "OBDC|Brightway Holdings, LLC",
+    "OBDC|Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+    "OBDC|GrowthCurve Capital Sunrise Co-Invest LP (dba Brightway)",
+    "OBDC|VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)"
+   ],
+   "n_names_with_changed_component": 12,
+   "components_changed": [
+    {
+     "name_id": "GBDC|Bayshore Intermediate #2, L.P.",
+     "co_members_before": [
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+      "OBDC|Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ],
+     "co_members_after": [
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ]
+    },
+    {
+     "name_id": "GBDC|Bayshore Intermediate #2, L.P.^",
+     "co_members_before": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+      "OBDC|Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ],
+     "co_members_after": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ]
+    },
+    {
+     "name_id": "GBDC|Mindbody, Inc.",
+     "co_members_before": [
+      "GBDC|Mindbody, Inc.<",
+      "OBDC|MINDBODY, Inc.",
+      "OBDC|VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+      "TSLX|Mindbody, Inc."
+     ],
+     "co_members_after": [
+      "GBDC|Mindbody, Inc.<",
+      "OBDC|MINDBODY, Inc.",
+      "TSLX|Mindbody, Inc."
+     ]
+    },
+    {
+     "name_id": "GBDC|Mindbody, Inc.<",
+     "co_members_before": [
+      "GBDC|Mindbody, Inc.",
+      "OBDC|MINDBODY, Inc.",
+      "OBDC|VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+      "TSLX|Mindbody, Inc."
+     ],
+     "co_members_after": [
+      "GBDC|Mindbody, Inc.",
+      "OBDC|MINDBODY, Inc.",
+      "TSLX|Mindbody, Inc."
+     ]
+    },
+    {
+     "name_id": "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+     "co_members_before": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "OBDC|Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ],
+     "co_members_after": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ]
+    },
+    {
+     "name_id": "OBDC|Brightway Holdings, LLC",
+     "co_members_before": [
+      "OBDC|GrowthCurve Capital Sunrise Co-Invest LP (dba Brightway)"
+     ],
+     "co_members_after": []
+    },
+    {
+     "name_id": "OBDC|Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+     "co_members_before": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+      "TSLX|Bayshore Intermediate #2, L.P."
+     ],
+     "co_members_after": []
+    },
+    {
+     "name_id": "OBDC|GrowthCurve Capital Sunrise Co-Invest LP (dba Brightway)",
+     "co_members_before": [
+      "OBDC|Brightway Holdings, LLC"
+     ],
+     "co_members_after": []
+    },
+    {
+     "name_id": "OBDC|MINDBODY, Inc.",
+     "co_members_before": [
+      "GBDC|Mindbody, Inc.",
+      "GBDC|Mindbody, Inc.<",
+      "OBDC|VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+      "TSLX|Mindbody, Inc."
+     ],
+     "co_members_after": [
+      "GBDC|Mindbody, Inc.",
+      "GBDC|Mindbody, Inc.<",
+      "TSLX|Mindbody, Inc."
+     ]
+    },
+    {
+     "name_id": "OBDC|VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+     "co_members_before": [
+      "GBDC|Mindbody, Inc.",
+      "GBDC|Mindbody, Inc.<",
+      "OBDC|MINDBODY, Inc.",
+      "TSLX|Mindbody, Inc."
+     ],
+     "co_members_after": []
+    },
+    {
+     "name_id": "TSLX|Bayshore Intermediate #2, L.P.",
+     "co_members_before": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)",
+      "OBDC|Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)"
+     ],
+     "co_members_after": [
+      "GBDC|Bayshore Intermediate #2, L.P.",
+      "GBDC|Bayshore Intermediate #2, L.P.^",
+      "OBDC|Bayshore Intermediate #2, L.P. (dba Boomi)"
+     ]
+    },
+    {
+     "name_id": "TSLX|Mindbody, Inc.",
+     "co_members_before": [
+      "GBDC|Mindbody, Inc.",
+      "GBDC|Mindbody, Inc.<",
+      "OBDC|MINDBODY, Inc.",
+      "OBDC|VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)"
+     ],
+     "co_members_after": [
+      "GBDC|Mindbody, Inc.",
+      "GBDC|Mindbody, Inc.<",
+      "OBDC|MINDBODY, Inc."
+     ]
+    }
+   ],
+   "pairs_demoted_at_threshold": [
+    {
+     "pair_id": "1080d79cfeb6",
+     "filer_a": "OBDC",
+     "raw_a": "MINDBODY, Inc.",
+     "filer_b": "OBDC",
+     "raw_b": "VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+     "score": 100.0,
+     "score_merge": 12.903225806451616
+    },
+    {
+     "pair_id": "1e2b67d4099d",
+     "filer_a": "OBDC",
+     "raw_a": "VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+     "filer_b": "TSLX",
+     "raw_b": "Mindbody, Inc.",
+     "score": 100.0,
+     "score_merge": 12.903225806451616
+    },
+    {
+     "pair_id": "22d43a95e645",
+     "filer_a": "GBDC",
+     "raw_a": "Mindbody, Inc.<",
+     "filer_b": "OBDC",
+     "raw_b": "VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+     "score": 100.0,
+     "score_merge": 12.903225806451616
+    },
+    {
+     "pair_id": "4225f59a48c3",
+     "filer_a": "OBDC",
+     "raw_a": "Brightway Holdings, LLC",
+     "filer_b": "OBDC",
+     "raw_b": "GrowthCurve Capital Sunrise Co-Invest LP (dba Brightway)",
+     "score": 100.0,
+     "score_merge": 30.769230769230774
+    },
+    {
+     "pair_id": "496fa5a07b22",
+     "filer_a": "OBDC",
+     "raw_a": "Bayshore Intermediate #2, L.P. (dba Boomi)",
+     "filer_b": "OBDC",
+     "raw_b": "Brooklyn Lender Co-Invest 2, L.P. (dba Boomi)",
+     "score": 100.0,
+     "score_merge": 46.808510638297875
+    },
+    {
+     "pair_id": "7c9c03c0a60b",
+     "filer_a": "GBDC",
+     "raw_a": "Mindbody, Inc.",
+     "filer_b": "OBDC",
+     "raw_b": "VEPF Torreys Aggregator, LLC (dba MINDBODY, Inc.)",
+     "score": 100.0,
+     "score_merge": 12.903225806451616
+    }
+   ],
+   "n_vehicle_names": 108,
+   "n_vehicle_names_with_dba": 4,
+   "n_borrowers_before": 2345,
+   "n_borrowers_after": 2348,
+   "n_borrowers_multi_holder_before": 187,
+   "n_borrowers_multi_holder_after": 187,
+   "curve_guarded": [
+    {
+     "threshold": 60,
+     "n_pred_pos": 132,
+     "tp": 73,
+     "fp": 59,
+     "precision": 0.553,
+     "recall": 1.0
+    },
+    {
+     "threshold": 61,
+     "n_pred_pos": 132,
+     "tp": 73,
+     "fp": 59,
+     "precision": 0.553,
+     "recall": 1.0
+    },
+    {
+     "threshold": 62,
+     "n_pred_pos": 132,
+     "tp": 73,
+     "fp": 59,
+     "precision": 0.553,
+     "recall": 1.0
+    },
+    {
+     "threshold": 63,
+     "n_pred_pos": 131,
+     "tp": 73,
+     "fp": 58,
+     "precision": 0.5573,
+     "recall": 1.0
+    },
+    {
+     "threshold": 64,
+     "n_pred_pos": 131,
+     "tp": 73,
+     "fp": 58,
+     "precision": 0.5573,
+     "recall": 1.0
+    },
+    {
+     "threshold": 65,
+     "n_pred_pos": 131,
+     "tp": 73,
+     "fp": 58,
+     "precision": 0.5573,
+     "recall": 1.0
+    },
+    {
+     "threshold": 66,
+     "n_pred_pos": 131,
+     "tp": 73,
+     "fp": 58,
+     "precision": 0.5573,
+     "recall": 1.0
+    },
+    {
+     "threshold": 67,
+     "n_pred_pos": 130,
+     "tp": 73,
+     "fp": 57,
+     "precision": 0.5615,
+     "recall": 1.0
+    },
+    {
+     "threshold": 68,
+     "n_pred_pos": 130,
+     "tp": 73,
+     "fp": 57,
+     "precision": 0.5615,
+     "recall": 1.0
+    },
+    {
+     "threshold": 69,
+     "n_pred_pos": 129,
+     "tp": 72,
+     "fp": 57,
+     "precision": 0.5581,
+     "recall": 0.9863
+    },
+    {
+     "threshold": 70,
+     "n_pred_pos": 129,
+     "tp": 72,
+     "fp": 57,
+     "precision": 0.5581,
+     "recall": 0.9863
+    },
+    {
+     "threshold": 71,
+     "n_pred_pos": 124,
+     "tp": 72,
+     "fp": 52,
+     "precision": 0.5806,
+     "recall": 0.9863
+    },
+    {
+     "threshold": 72,
+     "n_pred_pos": 122,
+     "tp": 71,
+     "fp": 51,
+     "precision": 0.582,
+     "recall": 0.9726
+    },
+    {
+     "threshold": 73,
+     "n_pred_pos": 117,
+     "tp": 71,
+     "fp": 46,
+     "precision": 0.6068,
+     "recall": 0.9726
+    },
+    {
+     "threshold": 74,
+     "n_pred_pos": 115,
+     "tp": 70,
+     "fp": 45,
+     "precision": 0.6087,
+     "recall": 0.9589
+    },
+    {
+     "threshold": 75,
+     "n_pred_pos": 114,
+     "tp": 70,
+     "fp": 44,
+     "precision": 0.614,
+     "recall": 0.9589
+    },
+    {
+     "threshold": 76,
+     "n_pred_pos": 111,
+     "tp": 70,
+     "fp": 41,
+     "precision": 0.6306,
+     "recall": 0.9589
+    },
+    {
+     "threshold": 77,
+     "n_pred_pos": 103,
+     "tp": 70,
+     "fp": 33,
+     "precision": 0.6796,
+     "recall": 0.9589
+    },
+    {
+     "threshold": 78,
+     "n_pred_pos": 100,
+     "tp": 70,
+     "fp": 30,
+     "precision": 0.7,
+     "recall": 0.9589
+    },
+    {
+     "threshold": 79,
+     "n_pred_pos": 95,
+     "tp": 69,
+     "fp": 26,
+     "precision": 0.7263,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 80,
+     "n_pred_pos": 95,
+     "tp": 69,
+     "fp": 26,
+     "precision": 0.7263,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 81,
+     "n_pred_pos": 93,
+     "tp": 69,
+     "fp": 24,
+     "precision": 0.7419,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 82,
+     "n_pred_pos": 90,
+     "tp": 69,
+     "fp": 21,
+     "precision": 0.7667,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 83,
+     "n_pred_pos": 87,
+     "tp": 69,
+     "fp": 18,
+     "precision": 0.7931,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 84,
+     "n_pred_pos": 86,
+     "tp": 69,
+     "fp": 17,
+     "precision": 0.8023,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 85,
+     "n_pred_pos": 82,
+     "tp": 69,
+     "fp": 13,
+     "precision": 0.8415,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 86,
+     "n_pred_pos": 78,
+     "tp": 69,
+     "fp": 9,
+     "precision": 0.8846,
+     "recall": 0.9452
+    },
+    {
+     "threshold": 87,
+     "n_pred_pos": 76,
+     "tp": 68,
+     "fp": 8,
+     "precision": 0.8947,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 88,
+     "n_pred_pos": 76,
+     "tp": 68,
+     "fp": 8,
+     "precision": 0.8947,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 89,
+     "n_pred_pos": 73,
+     "tp": 68,
+     "fp": 5,
+     "precision": 0.9315,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 90,
+     "n_pred_pos": 72,
+     "tp": 68,
+     "fp": 4,
+     "precision": 0.9444,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 91,
+     "n_pred_pos": 72,
+     "tp": 68,
+     "fp": 4,
+     "precision": 0.9444,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 92,
+     "n_pred_pos": 72,
+     "tp": 68,
+     "fp": 4,
+     "precision": 0.9444,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 93,
+     "n_pred_pos": 68,
+     "tp": 68,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.9315
+    },
+    {
+     "threshold": 94,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    },
+    {
+     "threshold": 95,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    },
+    {
+     "threshold": 96,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    },
+    {
+     "threshold": 97,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    },
+    {
+     "threshold": 98,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    },
+    {
+     "threshold": 99,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    },
+    {
+     "threshold": 100,
+     "n_pred_pos": 64,
+     "tp": 64,
+     "fp": 0,
+     "precision": 1.0,
+     "recall": 0.8767
+    }
+   ]
+  }
+ ],
+ "curve_guarded": [
+  {
+   "threshold": 60,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 61,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 62,
+   "n_pred_pos": 132,
+   "tp": 73,
+   "fp": 59,
+   "precision": 0.553,
+   "recall": 1.0
+  },
+  {
+   "threshold": 63,
+   "n_pred_pos": 131,
+   "tp": 73,
+   "fp": 58,
+   "precision": 0.5573,
+   "recall": 1.0
+  },
+  {
+   "threshold": 64,
+   "n_pred_pos": 131,
+   "tp": 73,
+   "fp": 58,
+   "precision": 0.5573,
+   "recall": 1.0
+  },
+  {
+   "threshold": 65,
+   "n_pred_pos": 131,
+   "tp": 73,
+   "fp": 58,
+   "precision": 0.5573,
+   "recall": 1.0
+  },
+  {
+   "threshold": 66,
+   "n_pred_pos": 131,
+   "tp": 73,
+   "fp": 58,
+   "precision": 0.5573,
+   "recall": 1.0
+  },
+  {
+   "threshold": 67,
+   "n_pred_pos": 130,
+   "tp": 73,
+   "fp": 57,
+   "precision": 0.5615,
+   "recall": 1.0
+  },
+  {
+   "threshold": 68,
+   "n_pred_pos": 130,
+   "tp": 73,
+   "fp": 57,
+   "precision": 0.5615,
+   "recall": 1.0
+  },
+  {
+   "threshold": 69,
+   "n_pred_pos": 129,
+   "tp": 72,
+   "fp": 57,
+   "precision": 0.5581,
+   "recall": 0.9863
+  },
+  {
+   "threshold": 70,
+   "n_pred_pos": 129,
+   "tp": 72,
+   "fp": 57,
+   "precision": 0.5581,
+   "recall": 0.9863
+  },
+  {
+   "threshold": 71,
+   "n_pred_pos": 124,
+   "tp": 72,
+   "fp": 52,
+   "precision": 0.5806,
+   "recall": 0.9863
+  },
+  {
+   "threshold": 72,
+   "n_pred_pos": 122,
+   "tp": 71,
+   "fp": 51,
+   "precision": 0.582,
+   "recall": 0.9726
+  },
+  {
+   "threshold": 73,
+   "n_pred_pos": 117,
+   "tp": 71,
+   "fp": 46,
+   "precision": 0.6068,
+   "recall": 0.9726
+  },
+  {
+   "threshold": 74,
+   "n_pred_pos": 115,
+   "tp": 70,
+   "fp": 45,
+   "precision": 0.6087,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 75,
+   "n_pred_pos": 114,
+   "tp": 70,
+   "fp": 44,
+   "precision": 0.614,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 76,
+   "n_pred_pos": 111,
+   "tp": 70,
+   "fp": 41,
+   "precision": 0.6306,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 77,
+   "n_pred_pos": 103,
+   "tp": 70,
+   "fp": 33,
+   "precision": 0.6796,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 78,
+   "n_pred_pos": 100,
+   "tp": 70,
+   "fp": 30,
+   "precision": 0.7,
+   "recall": 0.9589
+  },
+  {
+   "threshold": 79,
+   "n_pred_pos": 95,
+   "tp": 69,
+   "fp": 26,
+   "precision": 0.7263,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 80,
+   "n_pred_pos": 95,
+   "tp": 69,
+   "fp": 26,
+   "precision": 0.7263,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 81,
+   "n_pred_pos": 93,
+   "tp": 69,
+   "fp": 24,
+   "precision": 0.7419,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 82,
+   "n_pred_pos": 90,
+   "tp": 69,
+   "fp": 21,
+   "precision": 0.7667,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 83,
+   "n_pred_pos": 87,
+   "tp": 69,
+   "fp": 18,
+   "precision": 0.7931,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 84,
+   "n_pred_pos": 86,
+   "tp": 69,
+   "fp": 17,
+   "precision": 0.8023,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 85,
+   "n_pred_pos": 82,
+   "tp": 69,
+   "fp": 13,
+   "precision": 0.8415,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 86,
+   "n_pred_pos": 78,
+   "tp": 69,
+   "fp": 9,
+   "precision": 0.8846,
+   "recall": 0.9452
+  },
+  {
+   "threshold": 87,
+   "n_pred_pos": 76,
+   "tp": 68,
+   "fp": 8,
+   "precision": 0.8947,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 88,
+   "n_pred_pos": 76,
+   "tp": 68,
+   "fp": 8,
+   "precision": 0.8947,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 89,
+   "n_pred_pos": 73,
+   "tp": 68,
+   "fp": 5,
+   "precision": 0.9315,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 90,
+   "n_pred_pos": 72,
+   "tp": 68,
+   "fp": 4,
+   "precision": 0.9444,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 91,
+   "n_pred_pos": 72,
+   "tp": 68,
+   "fp": 4,
+   "precision": 0.9444,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 92,
+   "n_pred_pos": 72,
+   "tp": 68,
+   "fp": 4,
+   "precision": 0.9444,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 93,
+   "n_pred_pos": 68,
+   "tp": 68,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.9315
+  },
+  {
+   "threshold": 94,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 95,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 96,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 97,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 98,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 99,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  },
+  {
+   "threshold": 100,
+   "n_pred_pos": 64,
+   "tp": 64,
+   "fp": 0,
+   "precision": 1.0,
+   "recall": 0.8767
+  }
+ ],
+ "n_pairs": 3580,
+ "n_pairs_ge70": 2609,
+ "n_pairs_ge_threshold": 2311,
+ "n_pairs_ge_threshold_guarded": 2311,
+ "largest_block": 20,
+ "n_names": 3586,
+ "n_primary_distinct": 2579,
+ "n_after_rule_i": 2898,
+ "n_borrowers": 2348,
+ "n_borrowers_multi_holder": 187,
+ "n_borrowers_multi_holder_period": "2026-06-30",
+ "multi_holder": {
+  "per_period": {
+   "2024-09-30": 174,
+   "2024-12-31": 176,
+   "2025-03-31": 181,
+   "2025-06-30": 181,
+   "2025-09-30": 187,
+   "2025-12-31": 186,
+   "2026-03-31": 185,
+   "2026-06-30": 187
+  },
+  "proxy_per_period": {
+   "2024-09-30": 153,
+   "2024-12-31": 150,
+   "2025-03-31": 155,
+   "2025-06-30": 154,
+   "2025-09-30": 155,
+   "2025-12-31": 158,
+   "2026-03-31": 159,
+   "2026-06-30": 163
+  },
+  "at_2026_06_30": 187,
+  "proxy_at_2026_06_30": 163,
+  "max_over_periods": 187,
+  "any_period": 249,
+  "proxy_any_period": 223
+ },
+ "share_borrowers_2plus_any_period": 0.106,
+ "components": {
+  "n_components": 2348,
+  "largest": 11,
+  "over_cap": 0,
+  "split": [],
+  "size_distribution": {
+   "1": 1711,
+   "2": 344,
+   "3": 127,
+   "4": 90,
+   "5": 42,
+   "6": 18,
+   "7": 8,
+   "8": 4,
+   "9": 2,
+   "11": 2
+  }
+ },
+ "largest_component": 11,
+ "borrower_early_positives": [
+  {
+   "t": "2024-09-30",
+   "t_plus_1": "2024-12-31",
+   "accruing_known_t": 1381,
+   "still_present_t1": 1304,
+   "new_non_accrual_t1": 9
+  },
+  {
+   "t": "2024-12-31",
+   "t_plus_1": "2025-03-31",
+   "accruing_known_t": 1386,
+   "still_present_t1": 1338,
+   "new_non_accrual_t1": 17
+  },
+  {
+   "t": "2025-03-31",
+   "t_plus_1": "2025-06-30",
+   "accruing_known_t": 1417,
+   "still_present_t1": 1343,
+   "new_non_accrual_t1": 13
+  },
+  {
+   "t": "2025-06-30",
+   "t_plus_1": "2025-09-30",
+   "accruing_known_t": 1403,
+   "still_present_t1": 1342,
+   "new_non_accrual_t1": 15
+  },
+  {
+   "t": "2025-09-30",
+   "t_plus_1": "2025-12-31",
+   "accruing_known_t": 1443,
+   "still_present_t1": 1380,
+   "new_non_accrual_t1": 17
+  },
+  {
+   "t": "2025-12-31",
+   "t_plus_1": "2026-03-31",
+   "accruing_known_t": 1463,
+   "still_present_t1": 1423,
+   "new_non_accrual_t1": 22
+  },
+  {
+   "t": "2026-03-31",
+   "t_plus_1": "2026-06-30",
+   "accruing_known_t": 1468,
+   "still_present_t1": 1415,
+   "new_non_accrual_t1": 19
+  }
+ ],
+ "borrower_early_positives_pooled_last_two": 41,
+ "resolve_wall_seconds": 5.06,
+ "labels_path": "data/er_labels.csv",
+ "labels_copy": "eval/er_labels.csv",
+ "labels_sha256": "a929c5d29536e789bc290390497daf464a500d3c98fb69ed15e976d70272d4dc",
+ "in_curve_pair_set_sha256": "e65cc7227d25c991e5b1d08359d7207454db5ba87f6243addd54f568d4574c81",
+ "labels_seed": 20260910,
+ "tape_sha256": "0ba143e67ba6dd3de93d9e9cf723813342a23d4f905f200395764de91a98875b",
+ "written_at": "2026-09-06T21:52:59+00:00"
+}

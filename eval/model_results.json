@@ -1,0 +1,395 @@
+{
+ "n_boot": 1000,
+ "seed": 20260913,
+ "quarters": [
+  "2025-12-31",
+  "2026-03-31"
+ ],
+ "rows": {
+  "baseline": {
+   "n_test": 2838,
+   "n_positives": 41,
+   "base_rate": 0.014446793516560958,
+   "auc": 0.8160354735474418,
+   "recall_at_p30": null,
+   "recall_at_p30_k": null,
+   "recall_at_p30_precision": null,
+   "best_precision_over_cuts": 0.2727272727272727,
+   "precision_at_15__2025-12-31": 0.2,
+   "n_positives__2025-12-31": 22,
+   "n_test__2025-12-31": 1423,
+   "ceiling_at_15__2025-12-31": 1.0,
+   "precision_at_15__2026-03-31": 0.06666666666666667,
+   "n_positives__2026-03-31": 19,
+   "n_test__2026-03-31": 1415,
+   "ceiling_at_15__2026-03-31": 1.0,
+   "auc_ci_lo": 0.7239120396846487,
+   "auc_ci_hi": 0.8978418888137415,
+   "auc_ci_n": 1000,
+   "recall_at_p30_ci_lo": 0.0635970744680851,
+   "recall_at_p30_ci_hi": 0.4717580213903744,
+   "recall_at_p30_ci_n": 474,
+   "recall_at_p30_resamples_reached": 474,
+   "precision_at_15__2025-12-31_ci_lo": 0.06666666666666667,
+   "precision_at_15__2025-12-31_ci_hi": 0.4666666666666667,
+   "precision_at_15__2025-12-31_ci_n": 1000,
+   "precision_at_15__2026-03-31_ci_lo": 0.0,
+   "precision_at_15__2026-03-31_ci_hi": 0.26666666666666666,
+   "precision_at_15__2026-03-31_ci_n": 1000
+  },
+  "model": {
+   "n_test": 2838,
+   "n_positives": 41,
+   "base_rate": 0.014446793516560958,
+   "auc": 0.7287991489139061,
+   "recall_at_p30": 0.12195121951219512,
+   "recall_at_p30_k": 10,
+   "recall_at_p30_precision": 0.5,
+   "best_precision_over_cuts": null,
+   "precision_at_15__2025-12-31": 0.26666666666666666,
+   "n_positives__2025-12-31": 22,
+   "n_test__2025-12-31": 1423,
+   "ceiling_at_15__2025-12-31": 1.0,
+   "precision_at_15__2026-03-31": 0.06666666666666667,
+   "n_positives__2026-03-31": 19,
+   "n_test__2026-03-31": 1415,
+   "ceiling_at_15__2026-03-31": 1.0,
+   "auc_ci_lo": 0.6477146149504874,
+   "auc_ci_hi": 0.8047259937469621,
+   "auc_ci_n": 1000,
+   "recall_at_p30_ci_lo": 0.0675,
+   "recall_at_p30_ci_hi": 0.25608228980322,
+   "recall_at_p30_ci_n": 863,
+   "recall_at_p30_resamples_reached": 863,
+   "precision_at_15__2025-12-31_ci_lo": 0.06666666666666667,
+   "precision_at_15__2025-12-31_ci_hi": 0.6,
+   "precision_at_15__2025-12-31_ci_n": 1000,
+   "precision_at_15__2026-03-31_ci_lo": 0.0,
+   "precision_at_15__2026-03-31_ci_hi": 0.20166666666666516,
+   "precision_at_15__2026-03-31_ci_n": 1000
+  }
+ },
+ "diff": {
+  "auc": {
+   "value": -0.0859827329294416,
+   "ci_lo": -0.1947960634110783,
+   "ci_hi": 0.027335259809982526,
+   "n": 1000,
+   "n_dropped": 0,
+   "excludes_zero": false
+  },
+  "recall_at_p30": {
+   "value": -0.03634727362383345,
+   "ci_lo": -0.34969040247678024,
+   "ci_hi": 0.14815775817332638,
+   "n": 413,
+   "n_dropped": 587,
+   "excludes_zero": false
+  },
+  "precision_at_15__2025-12-31": {
+   "value": 0.07,
+   "ci_lo": -0.26666666666666666,
+   "ci_hi": 0.4,
+   "n": 1000,
+   "n_dropped": 0,
+   "excludes_zero": false
+  },
+  "precision_at_15__2026-03-31": {
+   "value": -0.013800000000000002,
+   "ci_lo": -0.13333333333333336,
+   "ci_hi": 0.13333333333333333,
+   "n": 1000,
+   "n_dropped": 0,
+   "excludes_zero": false
+  }
+ },
+ "folds": [
+  {
+   "fold": 0,
+   "train_rows": 3419,
+   "train_positives": 38,
+   "train_negatives": 3381,
+   "scale_pos_weight": 88.97,
+   "test_rows": 1401,
+   "test_positives": 20,
+   "fit_seconds": 0.16,
+   "train_periods": [
+    "2024-09-30",
+    "2024-12-31",
+    "2025-03-31",
+    "2025-06-30",
+    "2025-09-30"
+   ],
+   "test_periods": [
+    "2025-12-31",
+    "2026-03-31"
+   ],
+   "n_industries_encoded": 202,
+   "train_prior": 0.011114
+  },
+  {
+   "fold": 1,
+   "train_rows": 3288,
+   "train_positives": 33,
+   "train_negatives": 3255,
+   "scale_pos_weight": 98.64,
+   "test_rows": 1437,
+   "test_positives": 21,
+   "fit_seconds": 0.14,
+   "train_periods": [
+    "2024-09-30",
+    "2024-12-31",
+    "2025-03-31",
+    "2025-06-30",
+    "2025-09-30"
+   ],
+   "test_periods": [
+    "2025-12-31",
+    "2026-03-31"
+   ],
+   "n_industries_encoded": 215,
+   "train_prior": 0.010036
+  }
+ ],
+ "dropped": {
+  "panel rows (borrower x feature period)": 10445,
+  "rows outside the universe (no debt row, flagged at t, or no known-status holder)": 484,
+  "  of which: no debt position at t": 0,
+  "  of which: a known-status holder already on non-accrual on a debt row at t": 484,
+  "  of which: no holder with known status at t (FM-002 guard; 0 today)": 0,
+  "universe rows dropped: no known t+1 label": 416,
+  "  of which: the borrower is in no filing at t+1": 339,
+  "labelled rows (train + test)": 9545,
+  "pooled out-of-fold test rows": 2838,
+  "test rows with a null fvc_min (baseline ranks them last, not first)": 22
+ },
+ "wall_seconds": 28.2,
+ "pooled_positives": 41,
+ "pooled_n_test": 2838,
+ "underpowered": false,
+ "positives_floor": 15,
+ "recall_at_p30_definition": "largest recall over cuts with >= 10 flagged rows and precision >= 0.3; 'not reached' if no cut qualifies",
+ "bootstrap_unit": "borrowers resampled with replacement within test quarter, paired across models",
+ "baseline_variants": {
+  "nulls_ranked_last": {
+   "n": 2838,
+   "n_positives": 41,
+   "auc": 0.8160354735474418,
+   "average_precision": 0.12693909848546972
+  },
+  "nulls_dropped": {
+   "n": 2816,
+   "n_positives": 41,
+   "auc": 0.8145770160404305,
+   "average_precision": 0.12693909848546972
+  },
+  "n_null_fvc_min": 22,
+  "top_k_precision": {
+   "10": 0.2,
+   "15": 0.2,
+   "20": 0.15,
+   "30": 0.1333,
+   "50": 0.2,
+   "75": 0.1867,
+   "100": 0.17,
+   "150": 0.1333
+  },
+  "top_k_recall": {
+   "10": 0.0488,
+   "15": 0.0732,
+   "20": 0.0732,
+   "30": 0.0976,
+   "50": 0.2439,
+   "75": 0.3415,
+   "100": 0.4146,
+   "150": 0.4878
+  },
+  "per_quarter_auc": {
+   "2025-12-31": 0.8145642722730517,
+   "2026-03-31": 0.8080229226361031
+  },
+  "note": "The table's baseline row uses nulls-ranked-last, because M5.2 wants one `n_test` for both rows and the model scores all of them. The PM's 0.8145 is the nulls-dropped reading."
+ },
+ "reached": {
+  "baseline": false,
+  "model": true
+ },
+ "calibration": [
+  {
+   "mean_predicted": 0.000489584788186456,
+   "observed": 0.0
+  },
+  {
+   "mean_predicted": 0.000941687483553601,
+   "observed": 0.011299435028248588
+  },
+  {
+   "mean_predicted": 0.001427368407261342,
+   "observed": 0.005649717514124294
+  },
+  {
+   "mean_predicted": 0.002191253223548263,
+   "observed": 0.0028169014084507044
+  },
+  {
+   "mean_predicted": 0.003926884587591803,
+   "observed": 0.022535211267605635
+  },
+  {
+   "mean_predicted": 0.009005040514393377,
+   "observed": 0.0
+  },
+  {
+   "mean_predicted": 0.0389744552062221,
+   "observed": 0.03380281690140845
+  },
+  {
+   "mean_predicted": 0.35023949028740464,
+   "observed": 0.03943661971830986
+  }
+ ],
+ "confusion": {
+  "cut": "top 10 pooled (the Recall@P>=0.3 cut, precision 0.500)",
+  "n_flagged": 10,
+  "k_per_quarter": null,
+  "tn": 2792,
+  "fp": 5,
+  "fn": 36,
+  "tp": 5
+ },
+ "importance_gain_top10": {
+  "industry_te": 257.276,
+  "fvc_wmean": 89.401,
+  "fvc_min": 72.443,
+  "n_tranches": 56.982,
+  "size_rel_filer_max": 42.35,
+  "fvc_dispersion": 38.255,
+  "bucket_first_lien": 36.833,
+  "d_fvc_1q": 36.296,
+  "is_pik_any": 34.269,
+  "d_fvc_2q": 33.217
+ },
+ "importance_perm_top10": {
+  "industry_te": 0.07695,
+  "fvc_min": 0.06656,
+  "d_fvc_1q": 0.0261,
+  "spread_bps_max": 0.0162,
+  "fvc_mean": 0.01279,
+  "n_tranches": 0.01138,
+  "quarters_observed": 0.01083,
+  "fvc_wmean": 0.00911,
+  "bucket_first_lien": 0.00585,
+  "principal_sum": 0.0041
+ },
+ "top15": {
+  "baseline__2025-12-31": [
+   "Isagenix International, LLC",
+   "Fuse, LLC",
+   "Freeport Financial Funds",
+   "Prime ST LLC",
+   "Medical Solutions Holdings, Inc.",
+   "Redstone Holdco 2 LP",
+   "Builders Capital Loan Acquisition Trust 2022-RTL1, Structured Mezzanine",
+   "Conair Holdings LLC",
+   "Victor Technology, LLC",
+   "Datacom, LLC",
+   "Emerald Technologies Acquisition Co, Inc.",
+   "Mitnick Corporate Purchaser, Inc.",
+   "Applied Composites Holdings, LLC",
+   "Rising Tide Holdings, Inc.",
+   "Roof Opco, LLC"
+  ],
+  "model__2025-12-31": [
+   "Conair Holdings LLC",
+   "Convey Health Solutions, Inc.",
+   "Team Acquisition Corporation",
+   "Medallia Inc",
+   "Avalign Holdings, Inc.",
+   "Barracuda Parent, LLC",
+   "Mitnick Corporate Purchaser, Inc.",
+   "Symplr Software Inc.",
+   "Wellful Inc.",
+   "Solera LLC",
+   "Victor Technology, LLC",
+   "MMan Acquisition Co.",
+   "EWC Growth Partners LLC",
+   "Phoenix Operating LLC",
+   "NCI Inc"
+  ],
+  "baseline__2026-03-31": [
+   "Fuse, LLC",
+   "Medical Solutions Holdings, Inc.",
+   "Freeport Financial Funds",
+   "Barracuda Parent, LLC",
+   "Mitnick Corporate Purchaser, Inc.",
+   "Datacom, LLC",
+   "Victor Technology, LLC",
+   "Balrog Acquisition, Inc.",
+   "Emerald Technologies Acquisition Co, Inc.",
+   "Conair Holdings LLC",
+   "EP Purchaser, LLC",
+   "Loparex Midco B.V.",
+   "Applied Composites Holdings, LLC",
+   "Rising Tide Holdings, Inc.",
+   "Cornerstone OnDemand, Inc."
+  ],
+  "model__2026-03-31": [
+   "Barracuda Parent, LLC",
+   "Symplr Software Inc.",
+   "Solera LLC",
+   "Corsearch Intermediate Inc",
+   "Loparex Midco B.V.",
+   "3Pillar Global Inc",
+   "Baduhenna Bidco Limited",
+   "Wellful Inc.",
+   "Source Code LLC",
+   "Mitnick Corporate Purchaser, Inc.",
+   "Bloomerang, LLC",
+   "Peraton Corp",
+   "Revival Animal Health, LLC",
+   "Elite Sportswear, L.P.",
+   "ReliaQuest Holdings, LLC"
+  ]
+ },
+ "positives_below_fvc08_at_t": 10,
+ "exploratory": [
+  {
+   "n_test": 2838,
+   "n_positives": 41,
+   "base_rate": 0.014446793516560958,
+   "auc": 0.7598385029256084,
+   "recall_at_p30": null,
+   "recall_at_p30_k": null,
+   "recall_at_p30_precision": null,
+   "best_precision_over_cuts": 0.23529411764705882,
+   "precision_at_15__2025-12-31": 0.2,
+   "n_positives__2025-12-31": 22,
+   "n_test__2025-12-31": 1423,
+   "ceiling_at_15__2025-12-31": 1.0,
+   "precision_at_15__2026-03-31": 0.06666666666666667,
+   "n_positives__2026-03-31": 19,
+   "n_test__2026-03-31": 1415,
+   "ceiling_at_15__2026-03-31": 1.0,
+   "variant": "logreg"
+  },
+  {
+   "n_test": 2838,
+   "n_positives": 41,
+   "base_rate": 0.014446793516560958,
+   "auc": 0.7513276419857513,
+   "recall_at_p30": null,
+   "recall_at_p30_k": null,
+   "recall_at_p30_precision": null,
+   "best_precision_over_cuts": 0.18181818181818182,
+   "precision_at_15__2025-12-31": 0.2,
+   "n_positives__2025-12-31": 22,
+   "n_test__2025-12-31": 1423,
+   "ceiling_at_15__2025-12-31": 1.0,
+   "precision_at_15__2026-03-31": 0.06666666666666667,
+   "n_positives__2026-03-31": 19,
+   "n_test__2026-03-31": 1415,
+   "ceiling_at_15__2026-03-31": 1.0,
+   "variant": "no_industry"
+  }
+ ]
+}
