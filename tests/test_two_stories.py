@@ -71,7 +71,7 @@ def test_wilson_bounds():
 def test_two_story_app_renders_offline_with_caveats():
     app = AppTest.from_file(str(APP), default_timeout=180).run()
     assert not app.exception, [str(error.value) for error in app.exception]
-    assert [tab.label for tab in app.tabs] == ["1. Price a loan", "2. Review list"]
+    assert [tab.label for tab in app.tabs] == ["1. Price a new loan", "2. Quarterly review list"]
 
     price = page_text(app.tabs[0])
     assert "What you're deciding" in price
